@@ -24,13 +24,9 @@ void loop() {
   float f = dht.readTemperature(true);
   float l = analogRead(0);
   //Display Sensor data on the Serial Monitor
-  Serial.println("Humidity: "); 
-  Serial.println(h);
-  Serial.println("Temperature C: ");
-  Serial.println(t);
-  Serial.println("Temperature F: ");
-  Serial.println(f);
-  Serial.println("Light: ");
-  Serial.println(l);
+  Serial.println("Humidity: String(h)"); 
+  Serial.println("Temperature C: String(t)");
+  Serial.println("Temperature F: String(f)");
+  Serial.println("Light: String(l)");
   delay(1000);//delay for 1s before refreshing data
 }
